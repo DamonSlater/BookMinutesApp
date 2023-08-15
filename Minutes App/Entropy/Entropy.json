@@ -3,42 +3,72 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "Dropdown1": 42,
+    "FooterContainer1": 10,
+    "HeaderContainer1": 8,
     "Host": 3,
-    "Screen1": 4
+    "MainContainer1": 9,
+    "Screen1": 4,
+    "ScreenContainer1": 7,
+    "scrNewRequest": 6
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/15/2023 12:17:56",
+  "HeaderLastSavedDateTimeUTC": "08/15/2023 12:32:03",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "73f1daa6-ab25-488f-9303-60108bdcb450": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/1b3f6340a53147b89cfe80f7a6b799b4\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "ComboBoxSample": 1,
+    "DropDownSample": 2,
+    "Meeting_Types": 0
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
+  "OrderXMLTemplate": {
+    "dropdown": 1,
+    "groupContainer": 0
+  },
   "OverridablePropertiesEntry": {
     "App": {},
+    "Dropdown1": {},
+    "FooterContainer1": {},
+    "HeaderContainer1": {},
     "Host": {},
-    "Screen1": {}
+    "MainContainer1": {},
+    "Screen1": {},
+    "ScreenContainer1": {},
+    "scrNewRequest": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
+    "Dropdown1": 3,
+    "FooterContainer1": 4,
+    "HeaderContainer1": 1,
     "Host": 0,
-    "Screen1": 0
+    "MainContainer1": 2,
+    "Screen1": 0,
+    "ScreenContainer1": 0,
+    "scrNewRequest": 0
   },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0178312,
-    "ControlCount": {}
+    "AnalysisLoadTime": 0.0461163,
+    "ControlCount": {
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.4054006
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

@@ -1,1 +1,24 @@
-{}
+{
+  "73f1daa6-ab25-488f-9303-60108bdcb450": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://barnsleycouncil.sharepoint.com/sites/RPA": {
+        "dataSources": {
+          "Meeting_Types": {
+            "tableName": "ecb198a2-8bc5-4280-a219-9ddddd99fd3e"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Meeting_Types"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "73f1daa6-ab25-488f-9303-60108bdcb450"
+  }
+}

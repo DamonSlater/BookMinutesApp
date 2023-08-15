@@ -92,7 +92,7 @@
       "useguiddatatypes": true,
       "usenonblockingonstartrule": true,
       "webbarcodescanner": false,
-      "zeroalltabindexes": true
+      "zeroalltabindexes": false
     },
     "Author": "",
     "BindingErrorCount": 0,
@@ -111,7 +111,7 @@
     "Id": "20977dd2-1846-4ea7-93b4-84970505180f",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "ManualOfflineProfileId": null,
+    "ManualOfflineProfileId": "",
     "Name": "Minute Booking App",
     "OriginatingVersion": "1.334",
     "ParserErrorCount": 0,
@@ -129,6 +129,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1"
+    "Screen1",
+    "scrNewRequest"
   ]
 }
