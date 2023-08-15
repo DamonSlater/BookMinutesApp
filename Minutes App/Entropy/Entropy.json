@@ -49,6 +49,7 @@
     "HourValue1": 27,
     "HourValue2": 35,
     "HourValue3": 58,
+    "Label1": 75,
     "Label3": 6,
     "Location_Details_DataCard1": 40,
     "Meeting_Description_DataCard1": 14,
@@ -78,7 +79,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/15/2023 13:25:48",
+  "HeaderLastSavedDateTimeUTC": "08/15/2023 13:29:13",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "73f1daa6-ab25-488f-9303-60108bdcb450": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/13ba2c1e897c40b4b49b6a2e5be5d9a8\""
@@ -156,6 +157,7 @@
     "HourValue1": {},
     "HourValue2": {},
     "HourValue3": {},
+    "Label1": {},
     "Label3": {},
     "Location_Details_DataCard1": {},
     "Meeting_Description_DataCard1": {},
@@ -233,6 +235,7 @@
     "HourValue1": 0,
     "HourValue2": 0,
     "HourValue3": 0,
+    "Label1": 0,
     "Label3": 5,
     "Location_Details_DataCard1": 0,
     "Meeting_Description_DataCard1": 0,
