@@ -530,25 +530,9 @@ scrMeetingDetails As screen:
         OnSelect: |-
             =//Patch(Meeting_Events_1, LookUp(Meeting_Events_1, ID = galBookings.Selected.ID),{Date_Assigned: Today()})
             //Patch Assigned to and date assigned
+            Patch(Meeting_Events_1, LookUp(Meeting_Events_1, ID = galBookings.Selected.ID),{Assigned_To: User().Email)
             
-            //Patch(Meeting_Events_1, LookUp(Meeting_Events_1, ID = galBookings.Selected.ID),{Assigned_To: User().Email})
             
-            /*Patch(
-                'Meeting_Events_1',
-                LookUp('Meeting_Events_1', ID=galBookings.Selected.ID),
-                {
-                    Assigned_To: {
-                       '@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
-                       Claims: "i:0#.f|membership|jordanhudson@barnsley.gov.uk",
-                       Department: "",
-                       DisplayName: "Hudson , Jordan (ROBOTIC PROCESS AUTOMATION LEAD)",
-                       Email: "jordanhudson@barnsley.gov.uk",
-                       JobTitle: "",
-                       Picture: ""
-                    }
-                }
-            )
-            */
             
             
             Patch(
@@ -563,7 +547,8 @@ scrMeetingDetails As screen:
                        Email: "jordanhudson@barnsley.gov.uk",
                        JobTitle: "",
                        Picture: ""
-                    }
+                    },
+                    Date_Assigned: Today()
                 }
             )
         Text: ="Accept"
