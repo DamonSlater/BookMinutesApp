@@ -945,3 +945,10 @@
             Y: =336
             ZIndex: =3
 
+    btnConfirm As button:
+        OnSelect: =SubmitForm(Form3);Notify("Booking submitted",NotificationType.Success)
+        Text: ="Confirm"
+        X: =345
+        Y: =377
+        ZIndex: =9
+
