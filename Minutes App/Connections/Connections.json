@@ -8,9 +8,6 @@
     "datasets": {
       "https://barnsleycouncil.sharepoint.com/sites/RPA": {
         "dataSources": {
-          "Meeting_Events": {
-            "tableName": "f0748f6e-5615-434d-af3f-9423790a40f6"
-          },
           "Meeting_Types": {
             "tableName": "ecb198a2-8bc5-4280-a219-9ddddd99fd3e"
           }
@@ -18,8 +15,7 @@
       }
     },
     "dataSources": [
-      "Meeting_Types",
-      "Meeting_Events"
+      "Meeting_Types"
     ],
     "dependencies": {},
     "dependents": [],

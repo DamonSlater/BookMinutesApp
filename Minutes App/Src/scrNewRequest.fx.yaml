@@ -1,4 +1,4 @@
-scrNewRequest As screen:
+"scrNewRequest As screen.'autoLayout_HeaderFooter_ver1.0'":
 
     ddMeetingType As dropdown:
         Items: =Distinct(Filter(Meeting_Types, Meeting_Active = true), Title)
