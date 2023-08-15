@@ -1,4 +1,6 @@
 scrMeetingDetails As screen:
+    OnVisible: |-
+        =UpdateContext({varItemID:galBookings.Selected.ID})
 
     Container1_2 As groupContainer.manualLayoutContainer:
         Height: =100
@@ -37,7 +39,7 @@ scrMeetingDetails As screen:
         FormViewer1 As formViewer:
             DataSource: =Meeting_Events_1
             Height: =584
-            Item: =galBookings.Selected
+            Item: =LookUp(Meeting_Events_1, ID = varItemID)
             Width: =1366
             Y: =8
             ZIndex: =1
