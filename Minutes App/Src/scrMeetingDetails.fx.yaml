@@ -532,7 +532,7 @@ scrMeetingDetails As screen:
             //Patch Assigned to and date assigned
             //Patch(Meeting_Events_1, LookUp(Meeting_Events_1, ID = galBookings.Selected.ID),{Assigned_To: User().Email)
             Patch(
-                'Meeting_Events_1',
+                Meeting_Events_1,
                 galBookings.Selected,
                 {
                     Assigned_To: {

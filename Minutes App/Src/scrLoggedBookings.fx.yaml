@@ -40,10 +40,7 @@ scrLoggedBookings As screen:
             Items: |-
                 =Filter(
                     Meeting_Events_1,
-                    Or(
-                        IsBlank(Assigned_To),
-                        IsEmpty(Assigned_To)
-                    )
+                    Assigned_To.DisplayName = Blank()
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
