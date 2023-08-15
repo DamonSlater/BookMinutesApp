@@ -1,26 +1,79 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Dropdown1": 9,
+    "FooterContainer1": 10,
+    "HeaderContainer1": 7,
+    "Host": 3,
+    "MainContainer1": 8,
+    "Screen1": 4,
+    "ScreenContainer1": 6,
+    "scrNewRequest": 5
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "08/15/2023 12:52:25",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "73f1daa6-ab25-488f-9303-60108bdcb450": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/9731dacf17694124bede68133b61c38e\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "ComboBoxSample": 0,
+    "CustomGallerySample": 3,
+    "DropDownSample": 1,
+    "Meeting_Types": 2
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "OverridablePropertiesEntry": {},
+  "OrderXMLTemplate": {
+    "dropdown": 1,
+    "groupContainer": 0
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "Dropdown1": {},
+    "FooterContainer1": {},
+    "HeaderContainer1": {},
+    "Host": {},
+    "MainContainer1": {},
+    "Screen1": {},
+    "ScreenContainer1": {},
+    "scrNewRequest": {}
+  },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {},
-  "ResourcesJsonIndices": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "Dropdown1": 9,
+    "FooterContainer1": 8,
+    "HeaderContainer1": 6,
+    "Host": 0,
+    "MainContainer1": 7,
+    "Screen1": 3,
+    "ScreenContainer1": 5,
+    "scrNewRequest": 4
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.043643,
+    "ControlCount": {
+      "dropdown": 1,
+      "groupContainer": 4,
+      "screen": 2
+    },
+    "DeserializationLoadTime": 0.4544674
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }

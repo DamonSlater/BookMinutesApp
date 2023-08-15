@@ -33,8 +33,6 @@
       "Meeting_Active": "Meeting_Active",
       "Meeting_Priority": "Meeting_Priority",
       "Meeting_Priority#Id": "Meeting_Priority Id",
-      "Meeting_Type": "Meeting_Type",
-      "Meeting_Type#Id": "Meeting_Type Id",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Statutory": "Statutory",
@@ -43,7 +41,7 @@
     "DatasetName": "https://barnsleycouncil.sharepoint.com/sites/RPA",
     "EncodeDataset": true,
     "IsSampleData": false,
-    "IsWritable": true,
+    "IsWritable": false,
     "Name": "Meeting_Types",
     "Type": "ConnectedDataSourceInfo"
   }
