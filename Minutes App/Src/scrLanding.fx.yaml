@@ -38,6 +38,7 @@
         ZIndex: =3
 
         btnMakeRequest_1 As button:
+            Fill: =RGBA (99, 37, 117,1)
             Height: =82
             OnSelect: =Navigate(scrNewRequest,ScreenTransition.Fade)
             Text: ="Make new booking"
@@ -47,10 +48,11 @@
             ZIndex: =1
 
         btnViewAllocationList_1 As button:
+            Fill: =RGBA (99, 37, 117,1)
             Height: =82
             Text: ="View requested bookings"
             Width: =265
-            X: =280
-            Y: =336
+            X: =745
+            Y: =231
             ZIndex: =2
 
