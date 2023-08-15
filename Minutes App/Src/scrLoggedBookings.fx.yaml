@@ -37,7 +37,14 @@ scrLoggedBookings As screen:
         galBookings As gallery.galleryVertical:
             DelayItemLoading: =true
             Height: =583
-            Items: =Filter(Meeting_Events_1, IsBlank(Assigned_To))
+            Items: |-
+                =Filter(
+                    Meeting_Events_1,
+                    Or(
+                        IsBlank(Assigned_To),
+                        IsEmpty(Assigned_To)
+                    )
+                )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             OnSelect: =Navigate(scrMeetingDetails, ScreenTransition.Fade)
