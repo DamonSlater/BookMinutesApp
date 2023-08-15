@@ -1,0 +1,123 @@
+scrLoggedBookings As screen:
+
+    Container1_1 As groupContainer.manualLayoutContainer:
+        Height: =100
+        Width: =1366
+        ZIndex: =1
+
+        Rectangle1_2 As rectangle:
+            Fill: =RGBA(25, 25, 25, 1)
+            Width: =1366
+            ZIndex: =1
+
+        Label5_2 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =70
+            Size: =19
+            Text: ="Welcome " & User().FullName
+            Width: =337
+            X: =16
+            Y: =22
+            ZIndex: =2
+
+        Image1_2 As image:
+            Image: =User().Image
+            RadiusBottomLeft: =90
+            RadiusBottomRight: =90
+            RadiusTopLeft: =90
+            RadiusTopRight: =90
+            Width: =126
+            X: =1240
+            ZIndex: =3
+
+    Container3_1 As groupContainer.manualLayoutContainer:
+        Height: =592
+        Width: =1366
+        Y: =100
+        ZIndex: =2
+
+        "galBookings As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            DelayItemLoading: =true
+            Height: =583
+            Items: =Meeting_Events_1
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =104
+            Width: =1366
+            Y: =9
+            ZIndex: =1
+
+            Image2 As image:
+                Height: =72
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =72
+                X: =16
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            Title1 As label:
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Title
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Parent.TemplateWidth - 173
+                X: =103
+                Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1.Size * 1.8)) / 2
+                ZIndex: =2
+
+            Subtitle1 As label:
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Meeting_Description
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Title1.Width
+                X: =Title1.X
+                Y: =Title1.Y + Title1.Height
+                ZIndex: =3
+
+            NextArrow1 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(166, 166, 166, 1)
+                Height: =50
+                Icon: =Icon.ChevronRight
+                OnSelect: =Select(Parent)
+                PaddingBottom: =16
+                PaddingLeft: =16
+                PaddingRight: =16
+                PaddingTop: =16
+                Tooltip: ="View item details"
+                Width: =50
+                X: =Parent.TemplateWidth - Self.Width - 12
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =4
+
+            Separator4 As rectangle:
+                Height: =8
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =5
+
+            Rectangle2 As rectangle:
+                Height: =Parent.TemplateHeight - Separator4.Height
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.IsSelected
+                Width: =4
+                ZIndex: =6
+

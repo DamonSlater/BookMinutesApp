@@ -131,6 +131,7 @@
   "ScreenOrder": [
     "scrNewRequest",
     "scrBookingRequests",
-    "scrLanding"
+    "scrLanding",
+    "scrLoggedBookings"
   ]
 }
