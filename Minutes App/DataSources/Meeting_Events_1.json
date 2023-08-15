@@ -51,7 +51,7 @@
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "Meeting_Events",
+    "Name": "Meeting_Events_1",
     "Type": "ConnectedDataSourceInfo"
   }
 ]

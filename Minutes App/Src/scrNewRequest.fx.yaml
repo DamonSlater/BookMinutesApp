@@ -13,7 +13,7 @@
         ZIndex: =3
 
     Form3 As form:
-        DataSource: =Meeting_Events
+        DataSource: =Meeting_Events_1
         DefaultMode: =FormMode.New
         Height: =532
         Width: =1322
@@ -21,91 +21,23 @@
         Y: =223
         ZIndex: =4
 
-        Title_DataCard3 As typedDataCard.textualEditCard:
+        Title_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Meeting_Events],DataSourceInfo.DisplayName,"Title")
+            DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Meeting_Events], DataSourceInfo.MaxLength, "Title")
+            MaxLength: =DataSourceInfo([@Meeting_Events_1], DataSourceInfo.MaxLength, "Title")
             Required: =true
-            Update: =DataCardValue15.Text
-            Width: =440
-            X: =2
-            Y: =2
-            ZIndex: =1
-
-            DataCardKey18 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue15 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =ddMeetingType.SelectedText.Value
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey18.Y + DataCardKey18.Height + 5
-                ZIndex: =2
-
-            ErrorMessage18 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue15.Y + DataCardValue15.Height
-                ZIndex: =3
-
-            StarVisible18 As label:
-                Align: =Align.Center
-                Height: =DataCardKey18.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey18.Y
-                ZIndex: =4
-
-        Meeting_Description_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Meeting_Description"
-            Default: =ThisItem.Meeting_Description
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Meeting_Events],DataSourceInfo.DisplayName,"Meeting_Description")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@Meeting_Events], DataSourceInfo.MaxLength, "Meeting_Description")
-            Required: =false
-            Update: =DataCardValue8.Text
+            Update: =DataCardValue1.Text
             Width: =440
             X: =0
             Y: =0
             ZIndex: =5
 
-            DataCardKey8 As label:
+            DataCardKey1 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -115,7 +47,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue8 As text:
+            DataCardValue1 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -129,10 +61,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage8 As label:
+            ErrorMessage1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -144,17 +76,151 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue8.Y + DataCardValue8.Height
+                Y: =DataCardValue1.Y + DataCardValue1.Height
                 ZIndex: =3
 
-            StarVisible8 As label:
+            StarVisible1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey8.Height
+                Height: =DataCardKey1.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey8.Y
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
+        Meeting_Description_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Meeting_Description"
+            Default: =ThisItem.Meeting_Description
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"Meeting_Description")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Meeting_Events_1], DataSourceInfo.MaxLength, "Meeting_Description")
+            Required: =false
+            Update: =DataCardValue2.Text
+            Width: =440
+            X: =1
+            Y: =0
+            ZIndex: =5
+
+            DataCardKey2 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                ZIndex: =2
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue2.Y + DataCardValue2.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey2.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey2.Y
+                ZIndex: =4
+
+        Meeting_Type_DataCard1 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Meeting_Type"
+            Default: =ThisItem.Meeting_Type
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"Meeting_Type")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue3.Selected
+            Width: =440
+            X: =2
+            Y: =0
+            ZIndex: =5
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@Meeting_Events_1].Meeting_Type)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Meeting_Events_1.Meeting_Type,DataCardValue3.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey3.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey3.Y
                 ZIndex: =4
 
         Start_Time_DataCard1 As typedDataCard.dateTimeEditCard:
@@ -162,17 +228,17 @@
             DataField: ="Start_Time"
             Default: =ThisItem.Start_Time
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Meeting_Events],DataSourceInfo.DisplayName,"Start_Time")
+            DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"Start_Time")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DateValue1.SelectedDate + Time(Value(HourValue1.Selected.Value), Value(MinuteValue1.Selected.Value), 0)
             Width: =440
-            X: =1
-            Y: =0
+            X: =0
+            Y: =1
             ZIndex: =5
 
-            DataCardKey10 As label:
+            DataCardKey4 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -194,7 +260,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) / 2
                 X: =30
-                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
                 ZIndex: =2
 
             HourValue1 As dropdown:
@@ -245,7 +311,7 @@
                 Y: =HourValue1.Y
                 ZIndex: =5
 
-            ErrorMessage10 As label:
+            ErrorMessage4 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -260,14 +326,14 @@
                 Y: =HourValue1.Y + HourValue1.Height
                 ZIndex: =6
 
-            StarVisible10 As label:
+            StarVisible4 As label:
                 Align: =Align.Center
-                Height: =DataCardKey10.Height
+                Height: =DataCardKey4.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey10.Y
+                Y: =DataCardKey4.Y
                 ZIndex: =7
 
         End_Time_DataCard1 As typedDataCard.dateTimeEditCard:
@@ -275,17 +341,17 @@
             DataField: ="End_Time"
             Default: =ThisItem.End_Time
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Meeting_Events],DataSourceInfo.DisplayName,"End_Time")
+            DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"End_Time")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DateValue2.SelectedDate + Time(Value(HourValue2.Selected.Value), Value(MinuteValue2.Selected.Value), 0)
             Width: =440
-            X: =2
-            Y: =0
+            X: =1
+            Y: =1
             ZIndex: =5
 
-            DataCardKey11 As label:
+            DataCardKey5 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -307,7 +373,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) / 2
                 X: =30
-                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
                 ZIndex: =2
 
             HourValue2 As dropdown:
@@ -358,7 +424,7 @@
                 Y: =HourValue2.Y
                 ZIndex: =5
 
-            ErrorMessage11 As label:
+            ErrorMessage5 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -373,14 +439,14 @@
                 Y: =HourValue2.Y + HourValue2.Height
                 ZIndex: =6
 
-            StarVisible11 As label:
+            StarVisible5 As label:
                 Align: =Align.Center
-                Height: =DataCardKey11.Height
+                Height: =DataCardKey5.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey11.Y
+                Y: =DataCardKey5.Y
                 ZIndex: =7
 
         Location_Details_DataCard1 As typedDataCard.textualEditCard:
@@ -388,18 +454,18 @@
             DataField: ="Location_Details"
             Default: =ThisItem.Location_Details
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Meeting_Events],DataSourceInfo.DisplayName,"Location_Details")
+            DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"Location_Details")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Meeting_Events], DataSourceInfo.MaxLength, "Location_Details")
+            MaxLength: =DataSourceInfo([@Meeting_Events_1], DataSourceInfo.MaxLength, "Location_Details")
             Required: =false
-            Update: =DataCardValue10.Text
+            Update: =DataCardValue4.Text
             Width: =440
-            X: =0
+            X: =2
             Y: =1
             ZIndex: =5
 
-            DataCardKey12 As label:
+            DataCardKey6 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -409,7 +475,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue10 As text:
+            DataCardValue4 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -423,10 +489,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
                 ZIndex: =2
 
-            ErrorMessage12 As label:
+            ErrorMessage6 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -438,17 +504,17 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue10.Y + DataCardValue10.Height
+                Y: =DataCardValue4.Y + DataCardValue4.Height
                 ZIndex: =3
 
-            StarVisible12 As label:
+            StarVisible6 As label:
                 Align: =Align.Center
-                Height: =DataCardKey12.Height
+                Height: =DataCardKey6.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey12.Y
+                Y: =DataCardKey6.Y
                 ZIndex: =4
 
         Meeting_Location_DataCard1 As typedDataCard.comboBoxEditCard:
@@ -456,17 +522,17 @@
             DataField: ="Meeting_Location"
             Default: =ThisItem.Meeting_Location
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Meeting_Events],DataSourceInfo.DisplayName,"Meeting_Location")
+            DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"Meeting_Location")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue11.Selected
+            Update: =DataCardValue5.Selected
             Width: =440
-            X: =1
-            Y: =1
+            X: =0
+            Y: =2
             ZIndex: =5
 
-            DataCardKey13 As label:
+            DataCardKey7 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -476,24 +542,23 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue11 As combobox:
+            DataCardValue5 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([@Meeting_Events].Meeting_Location)
+                Items: =Choices([@Meeting_Events_1].Meeting_Location)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices(Meeting_Events_1.Meeting_Location,DataCardValue5.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
                 ZIndex: =2
 
-            ErrorMessage13 As label:
+            ErrorMessage7 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -505,17 +570,84 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue11.Y + DataCardValue11.Height
+                Y: =DataCardValue5.Y + DataCardValue5.Height
                 ZIndex: =3
 
-            StarVisible13 As label:
+            StarVisible7 As label:
                 Align: =Align.Center
-                Height: =DataCardKey13.Height
+                Height: =DataCardKey7.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey13.Y
+                Y: =DataCardKey7.Y
+                ZIndex: =4
+
+        Assigned_To_DataCard1 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Assigned_To"
+            Default: =ThisItem.Assigned_To
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"Assigned_To")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue6.Selected
+            Width: =440
+            X: =1
+            Y: =2
+            ZIndex: =5
+
+            DataCardKey8 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue6 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@Meeting_Events_1].Assigned_To)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["DisplayName"]
+                SearchItems: =Choices(Meeting_Events_1.Assigned_To,DataCardValue6.SearchText)
+                SelectMultiple: =false
+                Template: =ListItemTemplate.Person
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                ZIndex: =2
+
+            ErrorMessage8 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue6.Y + DataCardValue6.Height
+                ZIndex: =3
+
+            StarVisible8 As label:
+                Align: =Align.Center
+                Height: =DataCardKey8.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey8.Y
                 ZIndex: =4
 
         Date_Assigned_DataCard1 As typedDataCard.dateTimeEditCard:
@@ -523,17 +655,17 @@
             DataField: ="Date_Assigned"
             Default: =ThisItem.Date_Assigned
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Meeting_Events],DataSourceInfo.DisplayName,"Date_Assigned")
+            DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"Date_Assigned")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DateValue3.SelectedDate + Time(Value(HourValue3.Selected.Value), Value(MinuteValue3.Selected.Value), 0)
             Width: =440
-            X: =0
+            X: =2
             Y: =2
             ZIndex: =5
 
-            DataCardKey15 As label:
+            DataCardKey9 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -555,7 +687,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) / 2
                 X: =30
-                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
+                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
                 ZIndex: =2
 
             HourValue3 As dropdown:
@@ -606,7 +738,7 @@
                 Y: =HourValue3.Y
                 ZIndex: =5
 
-            ErrorMessage15 As label:
+            ErrorMessage9 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -621,14 +753,14 @@
                 Y: =HourValue3.Y + HourValue3.Height
                 ZIndex: =6
 
-            StarVisible15 As label:
+            StarVisible9 As label:
                 Align: =Align.Center
-                Height: =DataCardKey15.Height
+                Height: =DataCardKey9.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey15.Y
+                Y: =DataCardKey9.Y
                 ZIndex: =7
 
         Event_Status_DataCard1 As typedDataCard.comboBoxEditCard:
@@ -636,17 +768,17 @@
             DataField: ="Event_Status"
             Default: =ThisItem.Event_Status
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Meeting_Events],DataSourceInfo.DisplayName,"Event_Status")
+            DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"Event_Status")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =true
-            Update: =DataCardValue13.Selected
+            Update: =DataCardValue7.Selected
             Width: =440
-            X: =1
-            Y: =2
+            X: =0
+            Y: =3
             ZIndex: =5
 
-            DataCardKey16 As label:
+            DataCardKey10 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -656,24 +788,23 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue13 As combobox:
+            DataCardValue7 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([@Meeting_Events].Event_Status)
+                Items: =Choices([@Meeting_Events_1].Event_Status)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices(Meeting_Events_1.Event_Status,DataCardValue7.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
                 ZIndex: =2
 
-            ErrorMessage16 As label:
+            ErrorMessage10 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -685,35 +816,35 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue13.Y + DataCardValue13.Height
+                Y: =DataCardValue7.Y + DataCardValue7.Height
                 ZIndex: =3
 
-            StarVisible16 As label:
+            StarVisible10 As label:
                 Align: =Align.Center
-                Height: =DataCardKey16.Height
+                Height: =DataCardKey10.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey16.Y
+                Y: =DataCardKey10.Y
                 ZIndex: =4
 
-        Assigned_To_DataCard1 As typedDataCard.comboBoxEditCard:
+        Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Assigned_To"
-            Default: =ThisItem.Assigned_To
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Attachments
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Meeting_Events],DataSourceInfo.DisplayName,"Assigned_To")
+            DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue12.Selected
+            Update: =DataCardValue8.Attachments
             Width: =440
-            X: =2
-            Y: =1
+            X: =1
+            Y: =3
             ZIndex: =5
 
-            DataCardKey14 As label:
+            DataCardKey11 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -723,25 +854,22 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue12 As combobox:
+            DataCardValue8 As attachments:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([@Meeting_Events].Assigned_To)
+                IsInDataCard: =true
+                Items: =Parent.Default
+                PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["DisplayName"]
-                SearchItems: =[]
-                SelectMultiple: =false
-                Template: =ListItemTemplate.Person
+                PaddingRight: =5
+                PaddingTop: =5
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
                 ZIndex: =2
 
-            ErrorMessage14 As label:
+            ErrorMessage11 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -753,16 +881,16 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue12.Y + DataCardValue12.Height
+                Y: =DataCardValue8.Y + DataCardValue8.Height
                 ZIndex: =3
 
-            StarVisible14 As label:
+            StarVisible11 As label:
                 Align: =Align.Center
-                Height: =DataCardKey14.Height
+                Height: =DataCardKey11.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey14.Y
+                Y: =DataCardKey11.Y
                 ZIndex: =4
 
