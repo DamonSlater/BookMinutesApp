@@ -530,7 +530,7 @@ scrMeetingDetails As screen:
         OnSelect: |-
             =//Patch(Meeting_Events_1, LookUp(Meeting_Events_1, ID = galBookings.Selected.ID),{Date_Assigned: Today()})
             //Patch Assigned to and date assigned
-            Patch(Meeting_Events_1, LookUp(Meeting_Events_1, ID = galBookings.Selected.ID),{Assigned_To: User().Email)
+            //Patch(Meeting_Events_1, LookUp(Meeting_Events_1, ID = galBookings.Selected.ID),{Assigned_To: User().Email)
             
             
             
