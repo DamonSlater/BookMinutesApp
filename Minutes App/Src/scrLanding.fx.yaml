@@ -50,6 +50,8 @@
         btnViewAllocationList_1 As button:
             Fill: =RGBA (99, 37, 117,1)
             Height: =82
+            OnSelect: |
+                =Navigate(scrLoggedBookings,ScreenTransition.Fade)
             Text: ="View requested bookings"
             Width: =265
             X: =745
