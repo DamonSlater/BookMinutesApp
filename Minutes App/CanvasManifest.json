@@ -132,6 +132,7 @@
     "scrNewRequest",
     "scrBookingRequests",
     "scrLanding",
-    "scrLoggedBookings"
+    "scrLoggedBookings",
+    "scrMeetingDetails"
   ]
 }
