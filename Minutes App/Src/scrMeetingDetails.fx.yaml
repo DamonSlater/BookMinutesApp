@@ -531,24 +531,19 @@ scrMeetingDetails As screen:
             =//Patch(Meeting_Events_1, LookUp(Meeting_Events_1, ID = galBookings.Selected.ID),{Date_Assigned: Today()})
             //Patch Assigned to and date assigned
             //Patch(Meeting_Events_1, LookUp(Meeting_Events_1, ID = galBookings.Selected.ID),{Assigned_To: User().Email)
-            
-            
-            
-            
             Patch(
                 'Meeting_Events_1',
                 galBookings.Selected,
                 {
                     Assigned_To: {
-                       '@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
-                       Claims: "i:0#.f|membership|jordanhudson@barnsley.gov.uk",
-                       Department: "",
-                       DisplayName: "Hudson , Jordan (ROBOTIC PROCESS AUTOMATION LEAD)",
-                       Email: "jordanhudson@barnsley.gov.uk",
-                       JobTitle: "",
-                       Picture: ""
+                        Claims: "i:0#.f|membership|" & User().Email,
+                        Department: "",
+                        DisplayName: "",
+                        Email: "",
+                        JobTitle: "",
+                        Picture: ""
                     },
-                    Date_Assigned: Today()
+                    Date_Assigned: Now()
                 }
             )
         Text: ="Accept"
