@@ -58,3 +58,13 @@
             Y: =231
             ZIndex: =2
 
+        btnMakeRequest_2 As button:
+            Fill: =RGBA (99, 37, 117,1)
+            Height: =82
+            OnSelect: =Navigate(scrNewRequest,ScreenTransition.Fade)
+            Text: ="Make new booking"
+            Width: =265
+            X: =612
+            Y: =480
+            ZIndex: =3
+
