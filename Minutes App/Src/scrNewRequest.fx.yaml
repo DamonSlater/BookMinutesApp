@@ -894,3 +894,15 @@
                 Y: =DataCardKey11.Y
                 ZIndex: =4
 
+    btnClear As button:
+        Text: ="Clear"
+        X: =45
+        Y: =715
+        ZIndex: =5
+
+    btnSubmit As button:
+        Text: ="Submit"
+        X: =265
+        Y: =715
+        ZIndex: =6
+
