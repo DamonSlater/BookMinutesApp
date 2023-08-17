@@ -6,7 +6,7 @@ scrLoggedBookings As screen:
         ZIndex: =1
 
         Rectangle1_2 As rectangle:
-            Fill: =RGBA(25, 25, 25, 1)
+            Fill: =RGBA(79, 31, 106, 1)
             Width: =1366
             ZIndex: =1
 
@@ -29,14 +29,14 @@ scrLoggedBookings As screen:
             ZIndex: =4
 
     Container3_1 As groupContainer.manualLayoutContainer:
-        Height: =592
+        Height: =540
         Width: =1366
         Y: =100
         ZIndex: =2
 
         galBookings As gallery.galleryVertical:
             DelayItemLoading: =true
-            Height: =583
+            Height: =525
             Items: |-
                 =Filter(
                     Meeting_Events_1,
@@ -51,35 +51,44 @@ scrLoggedBookings As screen:
             ZIndex: =1
 
             Label7 As label:
+                Align: =Align.Center
+                Font: =Font.Lato
+                Height: =112
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.Title
-                X: =40
-                Y: =40
+                X: =68
+                Y: =5
                 ZIndex: =1
 
             Label8 As label:
+                Align: =Align.Center
+                Font: =Font.Lato
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.Meeting_Description
-                Width: =328
-                X: =226
+                Width: =214
+                X: =318
                 Y: =40
                 ZIndex: =2
 
             Label9 As label:
+                Align: =Align.Center
+                Font: =Font.Lato
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.Start_Time
-                Width: =194
-                X: =526
-                Y: =40
+                Width: =128
+                X: =660
+                Y: =41
                 ZIndex: =3
 
             Label10 As label:
-                Height: =44
+                Align: =Align.Center
+                Font: =Font.Lato
+                Height: =76
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Created By'.DisplayName
-                Width: =514
-                X: =702
-                Y: =40
+                Width: =314
+                X: =894
+                Y: =23
                 ZIndex: =4
 
             Rectangle4_1 As rectangle:
@@ -95,4 +104,22 @@ scrLoggedBookings As screen:
                 X: =1261
                 Y: =28
                 ZIndex: =8
+
+    Image2_1 As image:
+        Height: =124
+        Image: ='Barnsley 2030 purple'
+        Transparency: =0.5
+        Width: =235
+        X: =25
+        Y: =625
+        ZIndex: =3
+
+    Image3_1 As image:
+        Height: =125
+        Image: ='Council logo with red writing'
+        Transparency: =0.5
+        Width: =174
+        X: =1169
+        Y: =624
+        ZIndex: =4
 

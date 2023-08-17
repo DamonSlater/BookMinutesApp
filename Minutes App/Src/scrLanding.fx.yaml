@@ -6,22 +6,22 @@
         ZIndex: =2
 
         Rectangle1_1 As rectangle:
-            Fill: =RGBA(25, 25, 25, 1)
+            Fill: =RGBA(79, 31, 106, 1)
             Width: =1366
             ZIndex: =1
 
         Label5_1 As label:
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Lato Black'
             Height: =70
-            Size: =19
+            Size: =30
             Text: ="Welcome " & User().FullName
-            Width: =337
-            X: =16
-            Y: =22
+            Width: =600
             ZIndex: =2
 
         Image1_1 As image:
+            BorderColor: =RGBA(255, 255, 255, 1)
             Image: =User().Image
             RadiusBottomLeft: =90
             RadiusBottomRight: =90
