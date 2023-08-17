@@ -5,7 +5,7 @@
         Items: =Distinct(Filter(Meeting_Types, Meeting_Active = true), Title)
         X: =539
         Y: =153
-        ZIndex: =2
+        ZIndex: =1
 
     Label3 As label:
         Font: =Font.'Lato Black'
@@ -13,7 +13,7 @@
         Width: =59
         X: =480
         Y: =153
-        ZIndex: =3
+        ZIndex: =2
 
     Form3 As form:
         DataSource: =Meeting_Events_1
@@ -22,7 +22,7 @@
         Width: =1322
         X: =23
         Y: =223
-        ZIndex: =4
+        ZIndex: =3
 
         Title_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -88,12 +88,14 @@
 
             StarVisible1 As label:
                 Align: =Align.Center
+                Color: =RGBA(228, 0, 75, 1)
                 Height: =DataCardKey1.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey1.Y
+                X: =181
+                Y: =15
                 ZIndex: =4
 
         Meeting_Description_DataCard1 As typedDataCard.textualEditCard:
@@ -197,6 +199,7 @@
 
             DataCardValue3 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(79, 31, 106, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
@@ -269,6 +272,7 @@
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Lato
                 IconBackground: =RGBA(79, 31, 106,1)
                 IsEditable: =true
                 PaddingBottom: =0
@@ -285,6 +289,7 @@
                 ChevronBackground: =RGBA(79, 31, 106, 1)
                 Default: =Text(Hour(Parent.Default),"00")
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Lato
                 Height: =DateValue1.Height
                 Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
                 PaddingBottom: =5
@@ -318,6 +323,7 @@
                 ChevronBackground: =RGBA(79, 31, 106,1)
                 Default: =Text(Minute(Parent.Default),"00")
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Lato
                 Height: =HourValue1.Height
                 Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
                 PaddingBottom: =5
@@ -371,7 +377,9 @@
             ZIndex: =5
 
             DataCardKey5 As label:
+                Align: =Align.Center
                 AutoHeight: =true
+                Font: =Font.'Lato Black'
                 Height: =34
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -385,20 +393,24 @@
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Lato
+                IconBackground: =RGBA(79, 31, 106, 1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) / 2
-                X: =30
+                X: =125
                 Y: =DataCardKey5.Y + DataCardKey5.Height + 5
                 ZIndex: =2
 
             HourValue2 As dropdown:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(79, 31, 106, 1)
                 Default: =Text(Hour(Parent.Default),"00")
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Lato
                 Height: =DateValue2.Height
                 Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
                 PaddingBottom: =5
@@ -407,8 +419,8 @@
                 PaddingTop: =5
                 Tooltip: =Parent.DisplayName
                 Width: =DateValue2.Width / 2 - 10
-                X: =DateValue2.X + DateValue2.Width + 10
-                Y: =DateValue2.Y
+                X: =125
+                Y: =85
                 ZIndex: =3
 
             Separator2 As label:
@@ -423,14 +435,16 @@
                     =":"
                 Width: =10
                 Wrap: =false
-                X: =HourValue2.X + HourValue2.Width
+                X: =215
                 Y: =HourValue2.Y
                 ZIndex: =4
 
             MinuteValue2 As dropdown:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(79, 31, 106, 1)
                 Default: =Text(Minute(Parent.Default),"00")
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Lato
                 Height: =HourValue2.Height
                 Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
                 PaddingBottom: =5
@@ -439,7 +453,7 @@
                 PaddingTop: =5
                 Tooltip: =Parent.DisplayName
                 Width: =HourValue2.Width
-                X: =HourValue2.X + HourValue2.Width + Separator2.Width
+                X: =230
                 Y: =HourValue2.Y
                 ZIndex: =5
 
@@ -485,7 +499,9 @@
             ZIndex: =5
 
             DataCardKey6 As label:
+                Align: =Align.Center
                 AutoHeight: =true
+                Font: =Font.'Lato Black'
                 Height: =34
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -495,10 +511,12 @@
                 ZIndex: =1
 
             DataCardValue4 As text:
+                Align: =Align.Center
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Lato
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -565,9 +583,11 @@
 
             DataCardValue5 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(79, 31, 106, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Lato
                 Items: =Choices([@Meeting_Events_1].Meeting_Location)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
@@ -620,7 +640,9 @@
             ZIndex: =5
 
             DataCardKey8 As label:
+                Align: =Align.Center
                 AutoHeight: =true
+                Font: =Font.'Lato Black'
                 Height: =34
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -631,6 +653,7 @@
 
             DataCardValue6 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(79, 31, 106, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
@@ -703,6 +726,7 @@
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(79, 31, 106, 1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -715,6 +739,7 @@
 
             HourValue3 As dropdown:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(79, 31, 106, 1)
                 Default: =Text(Hour(Parent.Default),"00")
                 DisplayMode: =Parent.DisplayMode
                 Height: =DateValue3.Height
@@ -747,6 +772,7 @@
 
             MinuteValue3 As dropdown:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(79, 31, 106, 1)
                 Default: =Text(Minute(Parent.Default),"00")
                 DisplayMode: =Parent.DisplayMode
                 Height: =HourValue3.Height
@@ -793,7 +819,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Meeting_Events_1],DataSourceInfo.DisplayName,"Event_Status")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =120
             Required: =true
             Update: =DataCardValue7.Selected
             Width: =440
@@ -802,6 +828,7 @@
             ZIndex: =5
 
             DataCardKey10 As label:
+                Align: =Align.Center
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -813,6 +840,7 @@
 
             DataCardValue7 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(79, 31, 106, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
@@ -844,12 +872,14 @@
 
             StarVisible10 As label:
                 Align: =Align.Center
+                Color: =RGBA(228, 0, 75, 1)
                 Height: =DataCardKey10.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey10.Y
+                X: =148
+                Y: =15
                 ZIndex: =4
 
         Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
@@ -918,32 +948,45 @@
                 ZIndex: =4
 
     btnClear As button:
+        Fill: =RGBA(79, 31, 106, 1)
+        Height: =275
         Text: ="Clear"
-        X: =45
-        Y: =715
-        ZIndex: =5
+        X: =925
+        Y: =465
+        ZIndex: =4
 
     btnSubmit As button:
+        Fill: =RGBA(79, 31, 106, 1)
+        Height: =275
         OnSelect: |-
             =UpdateContext({varSummaryScreen:true})
         Text: ="Submit"
-        X: =265
-        Y: =715
-        ZIndex: =6
+        X: =1130
+        Y: =465
+        ZIndex: =5
 
     Label1 As label:
         Text: =varSummaryScreen
         X: =1216
         Y: =124
-        ZIndex: =7
+        ZIndex: =6
 
-    Image2_3 As image:
+    Rectangle2 As rectangle:
+        Fill: =RGBA(79, 31, 106, 1)
         Height: =124
-        Image: ='Barnsley 2030 purple'
-        Transparency: =0.5
-        Width: =235
-        X: =25
-        Y: =625
+        Width: =1366
+        ZIndex: =9
+
+    Label5 As label:
+        Align: =Align.Center
+        Color: =RGBA(188, 227, 250, 1)
+        Font: =Font.'Lato Black'
+        Height: =80
+        Size: =50
+        Text: ="Booking in"
+        Width: =455
+        X: =456
+        Y: =22
         ZIndex: =10
 
     Group1 As group:
@@ -958,7 +1001,7 @@
             Height: =768
             Visible: =varSummaryScreen
             Width: =scrNewRequest.Width
-            ZIndex: =8
+            ZIndex: =7
 
             Label2 As label:
                 Height: =192
@@ -988,32 +1031,13 @@
             Visible: =varSummaryScreen
             X: =78
             Y: =445
-            ZIndex: =9
+            ZIndex: =8
 
-    Image3_3 As image:
-        Height: =125
-        Image: ='Council logo with red writing'
-        Transparency: =0.5
-        Width: =174
-        X: =1169
-        Y: =624
+    Image4 As image:
+        Height: =118
+        Image: ='Barnsley Place of poss'
+        Width: =303
+        X: =23
+        Y: =3
         ZIndex: =11
-
-    Rectangle2 As rectangle:
-        Fill: =RGBA(79, 31, 106, 1)
-        Height: =124
-        Width: =1366
-        ZIndex: =12
-
-    Label5 As label:
-        Align: =Align.Center
-        Color: =RGBA(188, 227, 250, 1)
-        Font: =Font.'Lato Black'
-        Height: =80
-        Size: =50
-        Text: ="Booking in"
-        Width: =455
-        X: =456
-        Y: =22
-        ZIndex: =13
 
