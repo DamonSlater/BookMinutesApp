@@ -32,39 +32,69 @@
             ZIndex: =3
 
     Container3 As groupContainer.manualLayoutContainer:
-        Height: =592
+        Height: =497
         Width: =1366
         Y: =100
         ZIndex: =3
 
         btnMakeRequest_1 As button:
             Fill: =RGBA (99, 37, 117,1)
-            Height: =82
+            Font: =Font.'Lato Black'
+            Height: =407
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =ColorFade(RGBA(188, 227, 250, 1), -20%)
             OnSelect: =Navigate(scrNewRequest,ScreenTransition.Fade)
+            Size: =30
             Text: ="Make new booking"
             Width: =265
-            X: =280
-            Y: =231
+            X: =168
+            Y: =40
             ZIndex: =1
 
         btnViewAllocationList_1 As button:
             Fill: =RGBA (99, 37, 117,1)
-            Height: =82
+            Font: =Font.'Lato Black'
+            Height: =407
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =ColorFade(RGBA(188, 227, 250, 1), -20%)
             OnSelect: |
                 =Navigate(scrLoggedBookings,ScreenTransition.Fade)
+            Size: =30
             Text: ="View requested bookings"
             Width: =265
-            X: =745
-            Y: =231
+            X: =923
+            Y: =40
             ZIndex: =2
 
         btnMakeRequest_2 As button:
             Fill: =RGBA (99, 37, 117,1)
-            Height: =82
+            Font: =Font.'Lato Black'
+            Height: =405
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =ColorFade(RGBA(188, 227, 250, 1), -20%)
             OnSelect: =Navigate(scrNewRequest,ScreenTransition.Fade)
+            Size: =30
             Text: ="Make new booking"
             Width: =265
-            X: =612
-            Y: =480
+            X: =545
+            Y: =40
             ZIndex: =3
+
+    Image2 As image:
+        Height: =124
+        Image: ='Barnsley 2030 purple'
+        Transparency: =0.5
+        Width: =235
+        X: =25
+        Y: =625
+        ZIndex: =4
+
+    Image3 As image:
+        Height: =125
+        Image: ='Council logo with red writing'
+        Transparency: =0.5
+        Width: =174
+        X: =1169
+        Y: =624
+        ZIndex: =5
 
