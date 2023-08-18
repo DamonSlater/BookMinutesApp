@@ -947,35 +947,18 @@
                 Y: =DataCardKey11.Y
                 ZIndex: =4
 
-    btnClear As button:
-        Fill: =RGBA(79, 31, 106, 1)
-        Height: =275
-        Text: ="Clear"
-        X: =925
-        Y: =465
-        ZIndex: =4
-
-    btnSubmit As button:
-        Fill: =RGBA(79, 31, 106, 1)
-        Height: =275
-        OnSelect: |-
-            =UpdateContext({varSummaryScreen:true})
-        Text: ="Submit"
-        X: =1130
-        Y: =465
-        ZIndex: =5
-
     Label1 As label:
         Text: =varSummaryScreen
+        Visible: =false
         X: =1216
         Y: =124
-        ZIndex: =6
+        ZIndex: =4
 
     shp_Header_Purple As rectangle:
         Fill: =RGBA(79, 31, 106, 1)
         Height: =124
         Width: =1366
-        ZIndex: =9
+        ZIndex: =7
 
     txt_Booking_Title As label:
         Align: =Align.Center
@@ -987,6 +970,23 @@
         Width: =455
         X: =456
         Y: =22
+        ZIndex: =8
+
+    img_Barnsley2030_Yellow As image:
+        Height: =118
+        Image: ='Barnsley Place of poss'
+        Width: =303
+        X: =23
+        Y: =3
+        ZIndex: =9
+
+    btnClear As button:
+        Fill: =RGBA(188, 227, 250, 1)
+        Height: =49
+        Text: ="Clear"
+        Width: =80
+        X: =1097
+        Y: =37
         ZIndex: =10
 
     Group1 As group:
@@ -1001,7 +1001,7 @@
             Height: =768
             Visible: =varSummaryScreen
             Width: =scrNewRequest.Width
-            ZIndex: =7
+            ZIndex: =5
 
             Label2 As label:
                 Height: =192
@@ -1031,13 +1031,16 @@
             Visible: =varSummaryScreen
             X: =78
             Y: =445
-            ZIndex: =8
+            ZIndex: =6
 
-    img_Barnsley2030_Yellow As image:
-        Height: =118
-        Image: ='Barnsley Place of poss'
-        Width: =303
-        X: =23
-        Y: =3
+    btnSubmit As button:
+        Fill: =RGBA(188, 227, 250, 1)
+        Height: =49
+        OnSelect: |-
+            =UpdateContext({varSummaryScreen:true})
+        Text: ="Submit"
+        Width: =80
+        X: =1201
+        Y: =37
         ZIndex: =11
 
