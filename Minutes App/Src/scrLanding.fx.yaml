@@ -18,6 +18,8 @@
             Size: =30
             Text: ="Welcome " & User().FullName
             Width: =600
+            X: =383
+            Y: =15
             ZIndex: =2
 
         Image1_1 As image:

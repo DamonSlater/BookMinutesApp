@@ -971,13 +971,13 @@
         Y: =124
         ZIndex: =6
 
-    Rectangle2 As rectangle:
+    shp_Header_Purple As rectangle:
         Fill: =RGBA(79, 31, 106, 1)
         Height: =124
         Width: =1366
         ZIndex: =9
 
-    Label5 As label:
+    txt_Booking_Title As label:
         Align: =Align.Center
         Color: =RGBA(188, 227, 250, 1)
         Font: =Font.'Lato Black'
@@ -1033,7 +1033,7 @@
             Y: =445
             ZIndex: =8
 
-    Image4 As image:
+    img_Barnsley2030_Yellow As image:
         Height: =118
         Image: ='Barnsley Place of poss'
         Width: =303
