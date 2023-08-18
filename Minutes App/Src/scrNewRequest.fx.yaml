@@ -2,6 +2,7 @@
 
     ddMeetingType As dropdown:
         ChevronBackground: =RGBA(79, 31, 106, 1)
+        Font: =Font.Lato
         Items: =Distinct(Filter(Meeting_Types, Meeting_Active = true), Title)
         X: =539
         Y: =153
@@ -98,7 +99,7 @@
                 Y: =15
                 ZIndex: =4
 
-        Meeting_Description_DataCard1 As typedDataCard.textualEditCard:
+        dtc_Meeting_Description As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Meeting_Description"
             Default: =ThisItem.Meeting_Description
@@ -108,13 +109,13 @@
             Height: =50
             MaxLength: =DataSourceInfo([@Meeting_Events_1], DataSourceInfo.MaxLength, "Meeting_Description")
             Required: =false
-            Update: =DataCardValue2.Text
+            Update: =inp_Meeting_Description.Text
             Width: =440
             X: =1
             Y: =0
             ZIndex: =5
 
-            DataCardKey2 As label:
+            dtc_Meeting_Description_Title As label:
                 Align: =Align.Center
                 AutoHeight: =true
                 Font: =Font.'Lato Black'
@@ -126,7 +127,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue2 As text:
+            inp_Meeting_Description As text:
                 Align: =Align.Center
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
@@ -142,11 +143,12 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                Y: =dtc_Meeting_Description_Title.Y + dtc_Meeting_Description_Title.Height + 5
                 ZIndex: =2
 
-            ErrorMessage2 As label:
+            lbl_error_message As label:
                 AutoHeight: =true
+                Font: =Font.Lato
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -157,17 +159,18 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue2.Y + DataCardValue2.Height
+                Y: =inp_Meeting_Description.Y + inp_Meeting_Description.Height
                 ZIndex: =3
 
-            StarVisible2 As label:
+            lbl_star1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey2.Height
+                Height: =dtc_Meeting_Description_Title.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey2.Y
+                X: =104
+                Y: =dtc_Meeting_Description_Title.Y
                 ZIndex: =4
 
         Meeting_Type_DataCard1 As typedDataCard.comboBoxEditCard:
@@ -980,7 +983,7 @@
         Y: =3
         ZIndex: =9
 
-    btnClear As button:
+    btn_Clear As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(188, 227, 250, 1)
         Font: =Font.'Lato Black'
@@ -1036,7 +1039,7 @@
             Y: =445
             ZIndex: =6
 
-    btnSubmit As button:
+    btn_Submit As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(188, 227, 250, 1)
         Font: =Font.Lato

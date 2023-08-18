@@ -2344,19 +2344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scrNewRequest.Form3.Meeting_Description_DataCard1.DataCardValue2.AccessibleLabel"
+                  "fullyQualifiedName": "scrNewRequest.Form3.dtc_Meeting_Description.inp_Meeting_Description.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scrNewRequest.Form3.Meeting_Description_DataCard1.DataCardValue2.AccessibleLabel",
+                  "fullyQualifiedName": "scrNewRequest.Form3.dtc_Meeting_Description.inp_Meeting_Description.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "scrNewRequest",
-                "type": "scrNewRequest.Form3.Meeting_Description_DataCard1.DataCardValue2"
+                "type": "scrNewRequest.Form3.dtc_Meeting_Description.inp_Meeting_Description"
               }
             }
           ],
