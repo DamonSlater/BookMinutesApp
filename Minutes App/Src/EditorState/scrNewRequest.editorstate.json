@@ -311,7 +311,14 @@
         "HoverBorderColor",
         "BorderStyle",
         "FocusedBorderColor",
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(255, 255, 255, 1)",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         "PressedColor",
         "HoverColor",
@@ -327,7 +334,14 @@
         "DisabledFill",
         "PressedFill",
         "HoverFill",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         "Align",
         "VerticalAlign",
@@ -342,7 +356,14 @@
         "RadiusBottomRight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough"
@@ -357,7 +378,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnClear",
-      "ParentIndex": 9,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -611,7 +632,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnConfirm",
-      "ParentIndex": 8,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1071,7 +1092,14 @@
         "HoverBorderColor",
         "BorderStyle",
         "FocusedBorderColor",
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(255, 255, 255, 1)",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         "PressedColor",
         "HoverColor",
@@ -1087,7 +1115,14 @@
         "DisabledFill",
         "PressedFill",
         "HoverFill",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         "Align",
         "VerticalAlign",
@@ -1102,7 +1137,14 @@
         "RadiusBottomRight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough",
@@ -1125,7 +1167,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnSubmit",
-      "ParentIndex": 10,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8752,7 +8794,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ddMeetingType",
-      "ParentIndex": 6,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12394,7 +12436,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "Form3",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13757,7 +13799,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1",
-      "ParentIndex": 4,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14293,7 +14335,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3",
-      "ParentIndex": 5,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

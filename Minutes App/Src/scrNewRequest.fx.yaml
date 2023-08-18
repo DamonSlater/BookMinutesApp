@@ -981,8 +981,11 @@
         ZIndex: =9
 
     btnClear As button:
+        Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(188, 227, 250, 1)
+        Font: =Font.'Lato Black'
         Height: =49
+        Size: =20
         Text: ="Clear"
         Width: =80
         X: =1097
@@ -1034,12 +1037,15 @@
             ZIndex: =6
 
     btnSubmit As button:
+        Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(188, 227, 250, 1)
+        Font: =Font.Lato
         Height: =49
         OnSelect: |-
             =UpdateContext({varSummaryScreen:true})
+        Size: =20
         Text: ="Submit"
-        Width: =80
+        Width: =104
         X: =1201
         Y: =37
         ZIndex: =11
