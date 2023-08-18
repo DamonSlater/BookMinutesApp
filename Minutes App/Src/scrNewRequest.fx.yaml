@@ -173,7 +173,7 @@
                 Y: =dtc_Meeting_Description_Title.Y
                 ZIndex: =4
 
-        Meeting_Type_DataCard1 As typedDataCard.comboBoxEditCard:
+        dtc_Meeting_Type As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Meeting_Type"
             Default: =ThisItem.Meeting_Type
@@ -218,7 +218,7 @@
                 Y: =DataCardKey3.Y + DataCardKey3.Height + 5
                 ZIndex: =2
 
-            ErrorMessage3 As label:
+            lbl_error_message_2 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -233,7 +233,7 @@
                 Y: =DataCardValue3.Y + DataCardValue3.Height
                 ZIndex: =3
 
-            StarVisible3 As label:
+            lbl_star2 As label:
                 Align: =Align.Center
                 Height: =DataCardKey3.Height
                 Text: ="*"
