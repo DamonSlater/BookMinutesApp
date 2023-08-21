@@ -120,7 +120,7 @@
                 AutoHeight: =true
                 Font: =Font.'Lato Black'
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Description"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -193,7 +193,7 @@
                 AutoHeight: =true
                 Font: =Font.'Lato Black'
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Meeting Type"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -255,7 +255,7 @@
             Update: =DateValue1.SelectedDate + Time(Value(HourValue1.Selected.Value), Value(MinuteValue1.Selected.Value), 0)
             Width: =440
             X: =0
-            Y: =1
+            Y: =600
             ZIndex: =5
 
             DataCardKey4 As label:
@@ -263,7 +263,7 @@
                 AutoHeight: =true
                 Font: =Font.'Lato Black'
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Start date/time"
                 Width: =101
                 Wrap: =false
                 X: =169
@@ -321,6 +321,31 @@
                 Y: =84
                 ZIndex: =4
 
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =HourValue1.Y + HourValue1.Height
+                ZIndex: =5
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Height: =DataCardKey4.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey4.Y
+                ZIndex: =6
+
             MinuteValue1 As dropdown:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 ChevronBackground: =RGBA(79, 31, 106,1)
@@ -337,31 +362,6 @@
                 Width: =HourValue1.Width
                 X: =230
                 Y: =84
-                ZIndex: =5
-
-            ErrorMessage4 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =HourValue1.Y + HourValue1.Height
-                ZIndex: =6
-
-            StarVisible4 As label:
-                Align: =Align.Center
-                Height: =DataCardKey4.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey4.Y
                 ZIndex: =7
 
         End_Time_DataCard1 As typedDataCard.dateTimeEditCard:
@@ -717,7 +717,7 @@
                 AutoHeight: =true
                 Font: =Font.'Lato Black'
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Date Assigned"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
