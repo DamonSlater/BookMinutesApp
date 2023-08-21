@@ -1053,3 +1053,11 @@
         Y: =37
         ZIndex: =11
 
+    Icon1_2 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(scrLanding)
+        X: =1002
+        Y: =30
+        ZIndex: =12
+

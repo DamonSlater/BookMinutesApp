@@ -45,9 +45,9 @@
             Height: =407
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =ColorFade(RGBA(188, 227, 250, 1), -20%)
-            OnSelect: =Navigate(scrNewRequest,ScreenTransition.Fade)
+            OnSelect: =Navigate(scrMeetingDetails,ScreenTransition.Fade)
             Size: =30
-            Text: ="Make new booking"
+            Text: ="Meeting Details"
             Width: =265
             X: =168
             Y: =40
